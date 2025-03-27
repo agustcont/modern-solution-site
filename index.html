@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage My Business</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function handleNavChange(select) {
-      const url = select.value;
-      if (url) window.location.href = url;
-    }
-  </script>
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+
   <!-- Header / Nav -->
   <header>
     <div class="container">
@@ -32,8 +30,44 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">
-      <h2>Helping Small Businesses Succeed Online</h2>
-      <p>We design simple, clean, and powerful websites to server the local businesses of Yuma.</p>
+      <h2 class="typewriter">Helping Small Businesses Succeed Online</h2>
+      <p>We design simple, clean, and powerful websites to serve the local businesses of Yuma.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Projects Section -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>Client Projects</h2>
+      <div class="portfolio-items">
+        <div class="item hover-glow">
+          <h3>Client Website 1</h3>
+          <p>A clean and responsive business site built for showcasing local services.</p>
+          <a href="#" target="_blank">Visit Site</a>
+        </div>
+        <div class="item hover-glow">
+          <h3>Client Website 2</h3>
+          <p>Redesigned and optimized for mobile-first experience with modern layout.</p>
+          <a href="#" target="_blank">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="portfolio-items testimonial-carousel">
+        <div class="item testimonial active">
+          <p>"Absolutely loved working with Agustin and Sebastian. They made the process seamless and our site looks amazing!"</p>
+          <strong>- Maria G., Boutique Owner</strong>
+        </div>
+        <div class="item testimonial">
+          <p>"They understood what we needed right away and delivered fast. Highly recommend!"</p>
+          <strong>- James T., Restaurant Manager</strong>
+        </div>
+      </div>
     </div>
   </section>
 
