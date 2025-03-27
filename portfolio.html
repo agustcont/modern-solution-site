@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage My Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleNavChange(select) {
+      const url = select.value;
+      if (url) window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container">
+      <h1>Manage My Business</h1>
+      <nav>
+        <select onchange="handleNavChange(this)">
+          <option value="">Navigate to...</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About Us</option>
+          <option value="portfolio.html">Portfolio</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Helping Small Businesses Succeed Online</h2>
+      <p>We design simple, clean, and powerful websites for local businesses.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Projects Section -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>Client Projects</h2>
+      <div class="portfolio-items">
+        <div class="item">
+          <h3>Client Website 1</h3>
+          <p>A clean and responsive business site built for showcasing local services.</p>
+          <a href="#" target="_blank">Visit Site</a>
+        </div>
+        <div class="item">
+          <h3>Client Website 2</h3>
+          <p>Redesigned and optimized for mobile-first experience with modern layout.</p>
+          <a href="#" target="_blank">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="portfolio">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="portfolio-items">
+        <div class="item">
+          <p>"Absolutely loved working with Agustin and Sebastian. They made the process seamless and our site looks amazing!"</p>
+          <strong>- Maria G., Boutique Owner</strong>
+        </div>
+        <div class="item">
+          <p>"They understood what we needed right away and delivered fast. Highly recommend!"</p>
+          <strong>- James T., Restaurant Manager</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Manage My Business</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage My Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleNavChange(select) {
+      const url = select.value;
+      if (url) window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container">
+      <h1>Manage My Business</h1>
+      <nav>
+        <select onchange="handleNavChange(this)">
+          <option value="">Navigate to...</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About Us</option>
+          <option value="portfolio.html">Portfolio</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Helping Small Businesses Succeed Online</h2>
+      <p>We design simple, clean, and powerful websites to server the  local businesses of Yuma.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Manage My Business</p>
+    </div>
+  </footer>
+</body>
+</html>

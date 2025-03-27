@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Manage My Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleNavChange(select) {
+      const url = select.value;
+      if (url) window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Manage My Business</h1>
+      <nav>
+        <select onchange="handleNavChange(this)">
+          <option value="">Navigate to...</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About Us</option>
+          <option value="portfolio.html">Portfolio</option>
+          <option value="contact.html">Contact</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Manage My Business</p>
+    </div>
+  </footer>
+</body>
+</html>

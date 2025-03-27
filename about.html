@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Manage My Business</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleNavChange(select) {
+      const url = select.value;
+      if (url) window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container">
+      <h1>Manage My Business</h1>
+      <nav>
+        <select onchange="handleNavChange(this)">
+          <option value="">Navigate to...</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About Us</option>
+          <option value="index.html#portfolio">Portfolio</option>
+          <option value="index.html#contact">Contact</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Meet the Team</h2>
+      <p>We’re passionate about helping local businesses create a strong and lasting online presence.</p>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="item">
+        <h3>Agustin Contreras</h3>
+        <p>Agustin brings technical know-how and real-world IT experience to every project. With a background in infrastructure and database management, he's all about practical, reliable solutions that work.</p>
+      </div>
+      <div class="item">
+        <h3>Sebastian Medel</h3>
+        <p>Sebastian focuses on the user experience and design. He believes a website should not only look great but also feel intuitive and accessible. He’s the creative eye behind our clean and modern designs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Manage My Business</p>
+    </div>
+  </footer>
+</body>
+</html>
